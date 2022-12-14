@@ -14,7 +14,6 @@ channels = soup.find('div', attrs={'style': 'float: right; width: 900px;'}).find
 file = open('topyoutubers.csv', 'wb')
 writer = csv.writer(file)
  
-# write title row
 writer.writerow(['Username', 'Uploads', 'Views'])
  
 for channel in channels:
